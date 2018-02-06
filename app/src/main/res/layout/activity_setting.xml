@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/margin10">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push notifications"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDarkgrey"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:textSize="@dimen/font_large"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <Switch
+            android:id="@+id/push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SCBSwitch"
+            android:trackTint="@color/colorPrimaryDark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkgrey"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/margin10">
+        <Button
+            android:id="@+id/send_feedback_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDarkgrey"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:textSize="@dimen/font_large"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkgrey"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/margin10">
+        <Button
+            android:id="@+id/write_review_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write review"
+            android:textAllCaps="false"
+            android:gravity="left"
+            android:textColor="@color/colorDarkgrey"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/font_large"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkgrey"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/margin10">
+        <Button
+            android:id="@+id/faq_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAQ&#39;s"
+            android:textAllCaps="false"
+            android:gravity="left"
+            android:textColor="@color/colorDarkgrey"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/font_large"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkgrey"/>
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:textColor="@color/colorDarkgrey"
+        android:textSize="@dimen/font_large"
+        android:text="In memory of the victims of this senseless violence"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shooter Alert</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="continue1">Next</string>
+
+    <string name="slide_1_title">How does it work?</string>
+    <string name="slide_1_desc">We tell you about mass shootings now and in the past</string>
+
+    <string name="slide_2_title">How does it work?</string>
+    <string name="slide_2_desc">We show you where mass shootings were</string>
+
+    <string name="slide_3_title">We use location.</string>
+    <string name="slide_3_desc">We use your location to alert you of nearby shootings.</string>
+</resources>

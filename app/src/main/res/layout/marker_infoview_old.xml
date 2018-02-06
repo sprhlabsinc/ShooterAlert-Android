@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorNav">
+        <TextView
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:text="Sep 25, 2017"
+            android:id="@+id/incident_date_txt"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <TextView
+            android:layout_toLeftOf="@id/incident_date_txt"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Baltimore"
+            android:id="@+id/city_txt"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:text="Deaths"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/deaths_txt"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:text="0"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:text="Injuries"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/injuries_txt"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:text="0"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="News Links"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/url1_txt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:lines="1"
+            android:textSize="14sp"
+            android:text="https://google.com"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/url2_txt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:lines="1"
+            android:textSize="14sp"
+            android:text="https://google.com"
+            android:layout_marginBottom="20dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorNav">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/margin20"
+            android:layout_height="@dimen/margin20"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrwo"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+        <Button
+            android:id="@+id/other_event_but"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Other nearby events"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+        <Button
+            android:id="@+id/share_but"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Share"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+</LinearLayout>
